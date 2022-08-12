@@ -1,0 +1,53 @@
+.main__prod {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    
+
+}
+.pag__mobile{
+    background-image:url(../imagenes/images.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1900px;
+}
+.titulo__mobile{
+    @include posiciontitilo();
+    color: white;
+    
+}
+.seccion__prod {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    .seccion__mobile-1 {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+        
+
+    }
+
+    .mobile__img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .seccion__mobile-2 {
+        @extend .seccion__mobile-1;
+        padding-top:50px;
+        margin-bottom: 100px;
+    }
+    .mobile__border{
+       border: 1px solid black;
+        border-radius: 3px;
+    }
+}
+.color__bar{
+    color: white;
+}
